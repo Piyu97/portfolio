@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/15c8bf275d.js" crossorigin="anonymous"></script>
+
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-    <link rel="stylesheet" href="css/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <title>Piyush Jain</title>
     <style>
         body {
@@ -21,22 +35,18 @@
         .header {
             background-color: #59253A;
             width: 100%;
-            height: 140px;
+            height: 100px;
         }
 
         .image {
+            position: relative;
             border-radius: 100%;
-            width: 250px;
-            margin: 0% 40% 0% 40%;
-            justify-content: center;
-            justify-self: center;
         }
 
         #profile {
             border-radius: 100%;
             width: 150px;
             border: 10px solid #78244C;
-            margin-top: 20%;
         }
 
         .name {
@@ -60,229 +70,233 @@
         }
 
         .stack {
-            width: 200px;
-            height: 150px;
-        }
-        .contact
-        {
-            margin-top: 100px;
+            width: 100px;
+            height: 100px;
         }
 
-
-
-
-        .skills{
-            /* width: 400px; */
-            margin:40px auto;
+        .social {
+            height: 40px;
+            width: 30px;
         }
-        .skills li{
+
+        .skills {
+            margin: 40px auto;
+            display: flex;
+        }
+
+        .skills li {
             list-style: none;
-            margin:10px 0;
+            margin: 10px 0;
         }
-        .bar{
-            background-color:black;
-            display:block;
-            height: 5px ;
-            /* width: 100%; */
-            border:1px solid rgba(0,0,0,0.3);
+
+        .bar {
+            background-color: black;
+            display: block;
+            height: 10px;
             border-radius: 3px;
             overflow: hidden;
-            box-shadow: 0 0 10px #2187e7b3;
         }
-        .bar span{
-            height: 5px;
-            float:left;
-            background: #2187e7;
+
+        .bar span {
+            height: 10px;
+            float: left;
+            background: #895061;
         }
-        .html{
+
+        .html {
             width: 80%;
             animation: html 2s;
         }
-        @keyframes html{
-            0%{
+
+        @keyframes html {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 80%;
             }
         }
 
-        .css{
+        .css {
             width: 70%;
             animation: css 2s;
         }
-        @keyframes css{
-            0%{
+
+        @keyframes css {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 70%;
             }
         }
 
-        .javascript{
+        .javascript {
             width: 90%;
             animation: javascript 2s;
         }
-        @keyframes javascript{
-            0%{
+
+        @keyframes javascript {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 90%;
             }
         }
 
-        .jquery{
+        .jquery {
             width: 70%;
             animation: jquery 2s;
         }
-        @keyframes jquery{
-            0%{
+
+        @keyframes jquery {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 70%;
             }
         }
 
-        .bootstrap{
+        .bootstrap {
             width: 80%;
             animation: bootstrap 2s;
         }
-        @keyframes bootstrap{
-            0%{
+
+        @keyframes bootstrap {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 80%;
             }
         }
-        .react{
+
+        .react {
             width: 70%;
             animation: react 2s;
         }
-        @keyframes react{
-            0%{
+
+        @keyframes react {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 70%;
             }
         }
 
-        .python{
+        .python {
             width: 70%;
             animation: python 2s;
         }
-        @keyframes python{
-            0%{
+
+        @keyframes python {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 70%;
             }
         }
-        .flask{
+
+        .flask {
             width: 50%;
             animation: flask 2s;
         }
-        @keyframes flask{
-            0%{
+
+        @keyframes flask {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 50%;
             }
         }
-        .mysql{
+
+        .mysql {
             width: 80%;
             animation: mysql 2s;
         }
-        @keyframes mysql{
-            0%{
+
+        @keyframes mysql {
+            0% {
                 width: 0%;
             }
-            100%{
+
+            100% {
                 width: 80%;
             }
         }
-        /* .circles{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background:#101010 ;
-        } */
-        /* svg{
-            position: relative;
-            width: 150px;
-            height: 150px;
-            z-index: 1000;
-        }
-        svg circle{
-            width: 100%;
-            height: 100%;
-            fill:none;
-            stroke: #191919;
-            stroke-width: 10;
-            stroke-linecap: round;
-            transform:translate(5px,5px)
-        }
-        svg circle:nth-child(2)
-        {
-            stroke-dasharray: 220;
-            stroke-dashoffset: 220;
-        }
-        .card1:nth-child(1) svg circle:nth-child(2)
-        {
-            stroke:#00ff43;
-        }
-        .card2:nth-child(1) svg circle:nth-child(2)
-        {
-            stroke:#00a1ff;
-        }
-        .card3:nth-child(1) svg circle:nth-child(2)
-        {
-            stroke:#ff04f7;
-        }
-        .card4:nth-child(1) svg circle:nth-child(2)
-        {
-            stroke:red;
-        }
-        .container ~.card:hover
-        {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,.5);
-        } */
     </style>
 </head>
 
 <body>
     <div class="justify-content text-center header">
-        <div class="image ">
+    </div>
+    <div class="justify-content  text-center ">
+        <div class="image">
             <img src="/home/piyush/Downloads/Profile" alt="Display Profile" id="profile" width="150px">
             <h2 class="name animated jackInTheBox">Piyush Jain</h2>
             <div class="role ">Full Stack Developer</div>
         </div>
     </div>
-    <div class="contact text-center justify-content d-flex justify-content-center mt-5 container">
+    <hr class="mx-5">
+    <div class="contact text-center justify-content d-flex justify-content-center mt-3 container-fluid">
         <div class="row contact">
-            <div><span><i class="fa fa-map-marker mx-2" style="font-size:24px;color:#895061"></i></span> Bangalore,India
+            <div class=" col-lg-3 col-md-12 col-sm-12">
+                <i class="fa fa-map-marker " style="font-size:18px;color:#895061"><span
+                        style="color: black;">Bangalore,India</span></i>
             </div>
-            <div><span><i class="fa fa-phone mx-2" style="font-size:24px;color:#895061"></i></span>+91
-                8618114699
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <a href="tel:+8618114699" style="text-decoration: none;color:black"><i class="fa fa-phone"
+                        style="font-size:18px;color:#895061"><span style="color: black;">+918618114699</span></i>
             </div>
-            <div><span><i class="fa fa-envelope mx-2" style="font-size:24px;color:#895061"></i></span>
-                piyushjain2472@gmail.com</div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <a href="mailto:piyushjain2472@gmail.com" style="text-decoration: none;color:black"><i
+                        class="fa fa-envelope" style="font-size:18px;color:#895061"><span style="color: black;"
+                            class="mx-2">piyushjain2472@gmail.com</span></i></a>
+            </div>
         </div>
     </div>
-    <div class="justify-content-center text-center container description mt-2">Lorem ipsum dolor sit amet consectetur
-        adipisicing elit.
-        Cupiditate recusandae magni repudiandae excepturi. Ex ipsam at necessitatibus, quas porro sint consectetur
-        eum ipsa a numquam natus nihil beatae, pariatur odio.</div>
-    <div class="container">
+    <div class="text-center justify-content">
+        <ul style="list-style-type: none;" class="mt-3">
+            <li class="social list-inline-item mx-2"><a href="https://www.linkedin.com/in/piyush-jain-9b221b146"><img
+                        class="social" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG13.png"
+                        alt="linkedin link"></a></li>
+            <li class="social list-inline-item mx-2"><a href="https://github.com/Piyu97"><img
+                        src="https://cdn.svgporn.com/logos/github-icon.svg" class="social" alt="github link"></a></li>
+            <li class="social list-inline-item mx-2"><a href="https://twitter.com/Piyush_j_p"><img
+                        src="https://cdn.svgporn.com/logos/twitter.svg" class="social" alt="twitter link"></a></li>
+            <li class="social list-inline-item mx-2"><a href="https://www.hackerrank.com/piyushjain2472?hr_r=1"><img
+                        src="https://lh3.googleusercontent.com/_UM-hCZkLzRacoJlUgaxjIn9wOMEPc6ggsgzDJEYhgDvtIuHTIreez5nzAHSZVpdB8_v1Q=s85"
+                        class="social" alt="Hackerrank link"></a></li>
+        </ul>
+    </div>
+    <hr class="mx-5">
+
+    <div class="justify-content-center text-center container description mt-2">A passionate aspiring Full Stack
+        Developer skilled in MERN stack,moulded and
+        shaped by Masai School's training. Actively ready to join in a great lively team
+        in a good start-up environment and give my best.<button class="btn btn-dark ml-2"><a href="">Resume</a></button>
+    </div>
+    <hr class="mx-5">
+
+    <div class="container mt-2">
         <div class="row text-center">
+            <div class=" col-lg-3 col-md-6 col-sm-12 px-5 py-2 ">
+                <div class="icons p-2 mx-auto"><i class="fas fa-code-branch" style="font-size: 60px;color:white;"></i>
+                </div>
+            </div>
             <div class=" col-lg-3 col-md-6 col-sm-12 px-5 py-2 ">
                 <div class="icons p-2 mx-auto"><i class="fab fa-html5" style="font-size: 60px;color:white;"></i></div>
             </div>
@@ -303,144 +317,342 @@
             <div class=" col-lg-3 col-md-6 col-sm-12 px-5 py-2">
                 <div class="icons p-2  mx-auto"><i class="fab fa-python" style="font-size: 60px;color:white;"></i></div>
             </div>
+            <div class=" col-lg-3 col-md-6 col-sm-12 px-5 py-2">
+                <div class="icons p-2  mx-auto"><i class="fas fa-database" style="font-size: 60px;color:white;"></i>
+                </div>
+            </div>
         </div>
     </div>
+    <hr class="mx-5">
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 ">
-                <div>
-                    <figure><img class="stack"
-                            src="https://lh3.googleusercontent.com/proxy/wYbfILEQ4gjOJxUV8ful15JXgwZcDR-zU1K4xPwNMZDBeKcPJ7RILYD7qsjktx-EwTjLT97d2A-FU_aW2cJmxSt3jkmw_lPMbSXj0x1eWqi6NyqHCtzw7FuVeQ"
-                            alt="FrontEnd">
+                <div class="justify-content-center text-center">
+                    <figure><img class="stack" src="https://i.ibb.co/C76nVhV/frontend.png" alt="FrontEnd">
+                        <p>Frontend</p>
                         <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae
-                            laboriosam quae fugiat aliquam ea impedit ipsa ex! Illum consectetur voluptate ratione autem
-                            exercitationem iure incidunt officia? Iste, quas nostrum.</figcaption>
+                            laboriosam quae .</figcaption>
                     </figure>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <div>
+                <div class="justify-content-center text-center">
                     <figure><img class="stack"
-                            src="https://lh3.googleusercontent.com/proxy/wYbfILEQ4gjOJxUV8ful15JXgwZcDR-zU1K4xPwNMZDBeKcPJ7RILYD7qsjktx-EwTjLT97d2A-FU_aW2cJmxSt3jkmw_lPMbSXj0x1eWqi6NyqHCtzw7FuVeQ"
+                            src="https://www.pinclipart.com/picdir/big/413-4132981_the-icon-depicts-three-circular-objects-orbiting-a.png"
                             alt="FrontEnd">
+                        <p>React App</p>
                         <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae
-                            laboriosam quae fugiat aliquam ea impedit ipsa ex! Illum consectetur voluptate ratione autem
-                            exercitationem iure incidunt officia? Iste, quas nostrum.</figcaption>
+                            laboriosam quae fugiat</figcaption>
                     </figure>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <div>
-                    <figure><img class="stack"
-                            src="https://lh3.googleusercontent.com/proxy/wYbfILEQ4gjOJxUV8ful15JXgwZcDR-zU1K4xPwNMZDBeKcPJ7RILYD7qsjktx-EwTjLT97d2A-FU_aW2cJmxSt3jkmw_lPMbSXj0x1eWqi6NyqHCtzw7FuVeQ"
-                            alt="FrontEnd">
+                <div class="justify-content-center text-center">
+                    <figure><img class="stack" src="https://i.ibb.co/Y09tFTZ/backend.png" alt="BackEnd">
+                        <p>Backend</p>
                         <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae
-                            laboriosam quae fugiat aliquam ea impedit ipsa ex! Illum consectetur voluptate ratione autem
-                            exercitationem iure incidunt officia? Iste, quas nostrum.</figcaption>
+                            laboriosam quae fugiat</figcaption>
                     </figure>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <div>
-                    <figure><img class="stack"
-                            src="https://lh3.googleusercontent.com/proxy/wYbfILEQ4gjOJxUV8ful15JXgwZcDR-zU1K4xPwNMZDBeKcPJ7RILYD7qsjktx-EwTjLT97d2A-FU_aW2cJmxSt3jkmw_lPMbSXj0x1eWqi6NyqHCtzw7FuVeQ"
-                            alt="FrontEnd">
+                <div class="justify-content-center text-center">
+                    <figure><img class="stack" src="https://i.ibb.co/J28nH1g/datastructure.png" alt="FrontEnd">
+                        <p>Data Structures</p>
                         <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt repudiandae
-                            laboriosam quae fugiat aliquam ea impedit ipsa ex! Illum consectetur voluptate ratione autem
-                            exercitationem iure incidunt officia? Iste, quas nostrum.</figcaption>
+                            laboriosam quae fugiat </figcaption>
                     </figure>
                 </div>
             </div>
         </div>
 
     </div>
-    <div class=" container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 skills">
-                <h3 class="text-center">FRONTEND SKILLS</h3>
-                <li><h5>HTML5</h5><span class="bar"><span class="html"></span></span></li>
-                <li><h5>CSS3</h5><span class="bar"><span class="css"></span></span></li>
-                <li><h5>JAVASCRIPT</h5><span class="bar"><span class="javascript"></span></span></li>
-                <li><h5>Jquery</h5><span class="bar"><span class="jquery"></span></span></li>
-                <li><h5>Bootstrap</h5><span class="bar"><span class="bootstrap"></span></span></li>
-                <li><h5>React.js</h5><span class="bar"><span class="react"></span></span></li>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 skills">
-                <h3 class="text-center">BACKEND SKILLS</h3>
-                <li><h5>Python</h5><span class="bar"><span class="python"></span></span></li>
-                <li><h5>FLASK</h5><span class="bar"><span class="flask"></span></span></li>
-                <li><h5>MySql</h5><span class="bar"><span class="mysql"></span></span></li>
+    <hr class="mx-5">
+    <h3 class="text-center my-3">Proficiencies</h3>
+    <hr class="mx-5">
+    <div>
+        <div class="container">
+            <div class=" skills row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>HTML5</h5><span class="bar"><span class="html"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>CSS3</h5><span class="bar"><span class="css"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>JAVASCRIPT</h5><span class="bar"><span class="javascript"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 d-md-none d-lg-block">
+                    <h5>Jquery</h5><span class="bar"><span class="jquery"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>Bootstrap</h5><span class="bar"><span class="bootstrap"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>React.js</h5><span class="bar"><span class="react"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>Python</h5><span class="bar"><span class="python"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>FLASK</h5><span class="bar"><span class="flask"></span></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5>MySql</h5><span class="bar"><span class="mysql"></span></span>
+                </div>
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <div class="row circles">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card1">
-                    <div class="box">
-                        <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h4>1200<span>Hr</span></h4>
-                            </div>
-                        </div>
-                        <h4 class="text">Coding</h4>
+    <hr class="mx-5">
+    <h3 class="text-center my-3">Projects</h3>
+    <hr class="mx-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3  shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <div><img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack"></div>
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card2">
-                    <div class="box">
-                        <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h4>200<span>+</span></h4>
-                            </div>
-                        </div>
-                        <h4 class="text">Hackerrank</h4>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3 shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack">
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card3">
-                    <div class="box">
-                        <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h4>200<span>+</span></h4>
-                            </div>
-                        </div>
-                        <h4 class="text">Git commits</h4>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3 shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack">
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card4">
-                    <div class="box">
-                        <div class="percent">
-                            <svg>
-                                <circle cx="70" cy="70" r="70"></circle>
-                                <circle cx="70" cy="70" r="70"></circle>
-                            </svg>
-                            <div class="number">
-                                <h4>10<span>+</span></h4>
-                            </div>
-                        </div>
-                        <h2 class="text">Projects</h2>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3  shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack">
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3  shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack">
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 p-4 mt-3  shadow-sm p-3 mb-5 bg-white rounded"
+                style="border: 1px solid grey;">
+                <img src="https://i.ibb.co/J28nH1g/datastructure.png" class="stack">
+                <hr>
+                <div style="font-size: 17px;"><b>Lorem Ipsum</b></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda, molestias modi ipsam
+                    repudiandae, delen</p>
+                <div class="clearfix">
+                    <div class="float-left"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">DEMO</a></button></div>
+                    <div class="float-right"><button class="btn btn-primary"><a href=""
+                                style="text-decoration: none;color: white;">CODE</a></button></div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/html-5.svg">
+                        </li>
+                        <li class="list-inline-item"><img class="social" src="https://cdn.svgporn.com/logos/css-3.svg">
+                        </li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/javascript.svg"></li> -->
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/bootstrap.svg"></li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/react.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social" src="https://cdn.svgporn.com/logos/flask.svg">
+                        </li>
+                        <li class="list-inline-item "><img class="social"
+                                src="https://cdn.svgporn.com/logos/python.svg"></li>
+                        <!-- <li class="list-inline-item social"><img class="social" src="https://cdn.svgporn.com/logos/git-icon.svg"></li> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6  col-sm-3 offset-sm-6 offset-lg-0 offset-md-0 p-5">
+                <div class="justify-content-center">
+                    <div class="rounded-circle text-center p-4 "
+                        style="border:20px solid #78244C ;width: 150px; height: 150px;">
+                        <p class=" pt-3">1200+</p>
+                    </div>
+                    <p>Hours of Coding</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  col-sm-3 offset-sm-6 offset-lg-0 offset-md-0 p-5">
+                <div class="rounded-circle text-center p-4 "
+                    style="border:20px solid #78244C ;width: 150px; height: 150px;">
+                    <p class=" pt-3">200+</p>
+                </div>
+                <p >Hackerrank Question</p>
+            </div>
+            <div class="col-lg-3 col-md-6  col-sm-3 offset-sm-6 offset-lg-0 offset-md-0 p-5">
+                <div class="rounded-circle text-center p-4 "
+                    style="border:20px solid #78244C ;width: 150px; height: 150px;">
+                    <p class=" pt-3">200+</p>
+                </div>
+                <div class=" text-center">Git commits</div>
+            </div>
+            <div class="col-lg-3 col-md-6  col-sm-3 offset-sm-6 offset-lg-0 offset-md-0 p-5">
+                <div class="rounded-circle text-center p-4 "
+                    style="border:20px solid #78244C ;width: 150px; height: 150px;">
+                    <p class=" pt-3">100+</p>
+                </div>
+                <p class="text-center">Soft Skills</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="calendar mt-5">
+        Loading the data just for you.
+    </div>
+
+    <script>
+        new GitHubCalendar(".calendar", "Piyu97");
+    </script>
 
 
 </body>
