@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Include the library. -->
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -245,7 +252,7 @@
     </div>
     <div class="justify-content  text-center ">
         <div class="image">
-            <img src="/images/Profile" alt="Display Profile" id="profile" width="150px">
+            <img src="./images/Profile" alt="Display Profile" id="profile" width="150px">
             <h2 class="name animated jackInTheBox">Piyush Jain</h2>
             <div class="role ">Full Stack Developer</div>
         </div>
@@ -626,7 +633,7 @@
                     style="border:20px solid #78244C ;width: 150px; height: 150px;">
                     <p class=" pt-3">200+</p>
                 </div>
-                <p >Hackerrank Question</p>
+                <p>Hackerrank Question</p>
             </div>
             <div class="col-lg-3 col-md-6  col-sm-3 offset-sm-6 offset-lg-0 offset-md-0 p-5">
                 <div class="rounded-circle text-center p-4 "
@@ -650,8 +657,10 @@
         Loading the data just for you.
     </div>
 
+
     <script>
         new GitHubCalendar(".calendar", "Piyu97");
+         GitHubCalendar(".calendar", "Piyu97",{responsive:true});
     </script>
 
 
