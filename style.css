@@ -1,0 +1,210 @@
+body {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+}
+
+.header {
+    background-color: #59253A;
+    width: 100%;
+    height: 100px;
+}
+
+.image {
+    position: relative;
+    border-radius: 100%;
+}
+
+#profile {
+    border-radius: 100%;
+    width: 150px;
+    border: 10px solid #78244C;
+}
+
+.name {
+    color: #78244C;
+    font-weight: bolder;
+}
+
+/* .role {
+    font-size: 15px;
+} */
+
+.description {
+    width: 55%;
+    font-size: 15px;
+}
+
+.icons {
+    border-radius: 100%;
+    background-color: #78244C;
+    width: 80px;
+}
+
+.stack {
+    width: 100px;
+    height: 100px;
+}
+
+.social {
+    height: 40px;
+    width: 40px;
+}
+
+.skills {
+    margin: 40px auto;
+    display: flex;
+}
+
+.skills li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.bar {
+    background-color: black;
+    display: block;
+    height: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bar span {
+    height: 10px;
+    float: left;
+    background: #895061;
+}
+
+.html {
+    width: 80%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.css {
+    width: 70%;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.javascript {
+    width: 90%;
+    animation: javascript 2s;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.jquery {
+    width: 70%;
+    animation: jquery 2s;
+}
+
+@keyframes jquery {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.bootstrap {
+    width: 80%;
+    animation: bootstrap 2s;
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.react {
+    width: 70%;
+    animation: react 2s;
+}
+
+@keyframes react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.python {
+    width: 70%;
+    animation: python 2s;
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.flask {
+    width: 50%;
+    animation: flask 2s;
+}
+
+@keyframes flask {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.mysql {
+    width: 80%;
+    animation: mysql 2s;
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
